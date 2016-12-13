@@ -1,0 +1,15 @@
+{
+  "name": "benjaminmedia/bbpress-forum-description",
+  "description": "Adds a description field to a Forum in bbPress",
+  "type": "wordpress-plugin",
+  "keywords": ["wordpress", "plugin"],
+  "repositories":[
+    {
+      "type": "composer",
+      "url": "http://wpackagist.org"
+    }
+  ],
+  "require": {
+    "php": ">=5.5"
+  }
+}
