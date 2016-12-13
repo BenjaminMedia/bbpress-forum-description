@@ -12,7 +12,7 @@
 namespace bbPress\ForumDescription;
 use bbPress\ForumDescription\Admin\PostMetaBox;
 use bbPress\ForumDescription\Settings\SettingsPage;
-use bbPress\ForumDescription\Forum\TopicModifier;
+use bbPress\ForumDescription\Forum\ForumModifier;
 
 // Do not access this file directly
 if (!defined('ABSPATH')) {
