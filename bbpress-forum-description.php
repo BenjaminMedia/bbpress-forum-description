@@ -53,6 +53,8 @@ class Plugin
      * @var string Plugins url for this plugin.
      */
     public $plugin_url;
+
+    public $settingsLabel = '';
     /**
      * Do not load this more than once.
      */
@@ -63,6 +65,7 @@ class Plugin
         $this->basename = plugin_basename($this->file);
         $this->plugin_dir = plugin_dir_path($this->file);
         $this->plugin_url = plugin_dir_url($this->file);
+        $this->settingsLabel = 'Forum Description';
         // Load textdomain
         load_plugin_textdomain(self::TEXT_DOMAIN, false, dirname($this->basename) . '/languages');
         $this->settings = new SettingsPage();
