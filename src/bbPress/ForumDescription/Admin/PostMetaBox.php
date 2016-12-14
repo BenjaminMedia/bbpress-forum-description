@@ -3,7 +3,6 @@
 namespace bbPress\ForumDescription\Admin;
 
 use bbPress\ForumDescription;
-use bbPress\ForumDescription\Settings;
 
 class PostMetaBox
 {

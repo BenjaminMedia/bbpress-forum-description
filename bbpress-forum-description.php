@@ -11,8 +11,6 @@
 
 namespace bbPress\ForumDescription;
 use bbPress\ForumDescription\Admin\PostMetaBox;
-use bbPress\ForumDescription\Settings\SettingsPage;
-use bbPress\ForumDescription\Forum\ForumModifier;
 
 // Do not access this file directly
 if (!defined('ABSPATH')) {
@@ -68,7 +66,6 @@ class Plugin
         $this->settingsLabel = 'Forum Description';
         // Load textdomain
         load_plugin_textdomain(self::TEXT_DOMAIN, false, dirname($this->basename) . '/languages');
-        $this->settings = new SettingsPage();
     }
     private function boostrap() {
         PostMetaBox::register_meta_box();
